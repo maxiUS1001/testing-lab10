@@ -25,7 +25,7 @@ namespace lab9
         }
 
         [Test]
-        public void ShowSpecialOffer()
+        public void SortHotelsPriceInAscendingOrder()
         {
             var mainMenu = new MainPageObject(_driver);
 
