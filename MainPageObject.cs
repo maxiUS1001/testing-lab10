@@ -22,5 +22,19 @@ namespace lab9
 
             return new AirticketsPageObject(_driver);
         }
+
+        public HotelsPageObject SearchForHotels()
+        {
+            _driver.FindElement(By.XPath("//*[@id='textInput']")).SendKeys("Торревьеха");
+
+            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            _driver.FindElement(By.XPath("//span[text()='Торревьеха']")).Click();
+
+            _driver.FindElement(By.XPath("//p[text()='1 ночь']")).Click();
+
+            _driver.FindElement(By.XPath("//*[@id='SearchBoxContainer']/div[2]/button")).Click();
+
+            return new HotelsPageObject(_driver);
+        }
     }
 }

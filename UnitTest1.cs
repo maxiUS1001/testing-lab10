@@ -1,5 +1,6 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Edge;
+using OpenQA.Selenium.Interactions;
 
 namespace lab9
 {
@@ -11,7 +12,7 @@ namespace lab9
         public void Setup()
         {
             _driver = new EdgeDriver();
-            _driver.Navigate().GoToUrl("https://www.agoda.com/?cid=1844104");
+            _driver.Navigate().GoToUrl("https://www.agoda.com/ru-ru/?cid=1844104");
             _driver.Manage().Window.Maximize();
         }
 
@@ -21,6 +22,14 @@ namespace lab9
             var mainMenu = new MainPageObject(_driver);
 
             mainMenu.GoToAirticketsPage().SearchForFlights();
+        }
+
+        [Test]
+        public void ShowSpecialOffer()
+        {
+            var mainMenu = new MainPageObject(_driver);
+
+            mainMenu.SearchForHotels().SortInAscending();
         }
 
         [TearDown]

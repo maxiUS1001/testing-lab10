@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\3sem\\Testing\\lab9\\lab9.csproj": {}
+    "D:\\3sem\\Testing\\lab10\\lab9.csproj": {}
   },
   "projects": {
-    "D:\\3sem\\Testing\\lab9\\lab9.csproj": {
+    "D:\\3sem\\Testing\\lab10\\lab9.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\3sem\\Testing\\lab9\\lab9.csproj",
+        "projectUniqueName": "D:\\3sem\\Testing\\lab10\\lab9.csproj",
         "projectName": "lab9",
-        "projectPath": "D:\\3sem\\Testing\\lab9\\lab9.csproj",
+        "projectPath": "D:\\3sem\\Testing\\lab10\\lab9.csproj",
         "packagesPath": "C:\\Users\\Maximilliano\\.nuget\\packages\\",
-        "outputPath": "D:\\3sem\\Testing\\lab9\\obj\\",
+        "outputPath": "D:\\3sem\\Testing\\lab10\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Maximilliano\\AppData\\Roaming\\NuGet\\NuGet.Config",
